@@ -119,7 +119,7 @@ export default async function Page({
 
           {/* Nombre + verificado */}
           <div style={{
-            position: "absolute", bottom: 56, left: 0, right: 0,
+            position: "absolute", bottom: 80, left: 0, right: 0,
             textAlign: "center",
             display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
           }}>
@@ -129,7 +129,7 @@ export default async function Page({
 
           {/* Botones sociales debajo del nombre */}
           <div style={{
-            position: "absolute", bottom: 10, left: 0, right: 0,
+            position: "absolute", bottom: 14, left: 0, right: 0,
             display: "flex", gap: 12, justifyContent: "center",
           }}>
             <SocialButton href={LINK_TIKTOK}><IconTT /></SocialButton>
