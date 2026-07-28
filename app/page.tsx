@@ -14,9 +14,9 @@ const trackingLinks: Record<string, string> = {
 };
 
 const IconIG = () => (
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
-    <rect x="2" y="2" width="20" height="20" rx="6" stroke="white" strokeWidth="1.8" fill="none"/>
-    <circle cx="12" cy="12" r="5" stroke="white" strokeWidth="1.8" fill="none"/>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+    <rect x="2" y="2" width="20" height="20" rx="6" stroke="white" strokeWidth="1.8"/>
+    <circle cx="12" cy="12" r="5" stroke="white" strokeWidth="1.8"/>
     <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
   </svg>
 );
@@ -43,8 +43,8 @@ function SocialButton({ href, children }: { href: string; children: React.ReactN
   return (
     
       href={href}
-      target="_blank"
-      rel="noreferrer"
+      target={"_blank"}
+      rel={"noreferrer"}
       style={{
         width: 56,
         height: 56,
@@ -90,7 +90,6 @@ export default async function Page({
     >
       <Image src="/bg.jpg" alt="background" fill priority style={{ objectFit: "cover", opacity: 0.7 }} />
 
-      {/* CARD */}
       <div
         style={{
           position: "relative",
@@ -105,20 +104,18 @@ export default async function Page({
           color: "white",
         }}
       >
-        {/* HERO IMAGE — foto grande arriba */}
+        {/* HERO IMAGE */}
         <div style={{ position: "relative", width: "100%", height: "clamp(260px, 60vw, 360px)" }}>
           <Image src="/avatar.jpg" alt="Erin Mia James" fill priority style={{ objectFit: "cover" }} />
-          {/* Gradiente fade abajo */}
           <div style={{
             position: "absolute", bottom: 0, left: 0, right: 0, height: "50%",
             background: "linear-gradient(to bottom, transparent, rgba(20,20,20,0.95))",
           }} />
-          {/* Nombre sobre la imagen */}
           <div style={{
             position: "absolute", bottom: 16, left: 0, right: 0,
             textAlign: "center",
           }}>
-            <div style={{ fontSize: "clamp(26px, 7vw, 36px)", fontWeight: 900, letterSpacing: 0.5 }}>
+            <div style={{ fontSize: "clamp(24px, 6vw, 32px)", fontWeight: 900, letterSpacing: 0.5 }}>
               {NAME} <span style={{ color: "#4da6ff", fontSize: "0.7em" }}>✓</span>
             </div>
           </div>
@@ -156,8 +153,8 @@ export default async function Page({
           {/* CARD IMAGE */}
           
             href={LINK_MAIN}
-            target="_blank"
-            rel="noreferrer"
+            target={"_blank"}
+            rel={"noreferrer"}
             style={{ display: "block", position: "relative", width: "100%", borderRadius: 16, overflow: "hidden" }}
           >
             <Image
