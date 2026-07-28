@@ -104,20 +104,37 @@ export default async function Page({
           color: "white",
         }}
       >
-        {/* HERO IMAGE */}
+      {/* HERO IMAGE */}
         <div style={{ position: "relative", width: "100%", height: "clamp(260px, 60vw, 360px)" }}>
           <Image src="/avatar.jpg" alt="Erin Mia James" fill priority style={{ objectFit: "cover" }} />
           <div style={{
-            position: "absolute", bottom: 0, left: 0, right: 0, height: "50%",
-            background: "linear-gradient(to bottom, transparent, rgba(20,20,20,0.95))",
+            position: "absolute", bottom: 0, left: 0, right: 0, height: "60%",
+            background: "linear-gradient(to bottom, transparent, rgba(20,20,20,0.98))",
           }} />
+
+          {/* Botones sociales DENTRO de la foto */}
+          <div style={{
+            position: "absolute", bottom: 60, left: 0, right: 0,
+            display: "flex", gap: 14, justifyContent: "center",
+          }}>
+            <SocialButton href={LINK_TIKTOK}><IconTT /></SocialButton>
+            <SocialButton href={LINK_TG}><IconTG /></SocialButton>
+            <SocialButton href={LINK_IG}><IconIG /></SocialButton>
+            <SocialButton href={LINK_FB}><IconFB /></SocialButton>
+          </div>
+
+          {/* Nombre + verificado */}
           <div style={{
             position: "absolute", bottom: 16, left: 0, right: 0,
-            textAlign: "center",
+            textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
           }}>
-            <div style={{ fontSize: "clamp(24px, 6vw, 32px)", fontWeight: 900, letterSpacing: 0.5 }}>
-              {NAME} <span style={{ color: "#4da6ff", fontSize: "0.7em" }}>✓</span>
-            </div>
+            <span style={{ fontSize: "clamp(22px, 6vw, 30px)", fontWeight: 900 }}>{NAME}</span>
+            <span style={{
+              width: 22, height: 22, borderRadius: "50%",
+              background: "#1d9bf0",
+              display: "inline-flex", alignItems: "center", justifyContent: "center",
+              fontSize: 13, fontWeight: 900, color: "white", flexShrink: 0,
+            }}>✓</span>
           </div>
         </div>
 
@@ -128,14 +145,6 @@ export default async function Page({
           gap: 16,
           padding: "20px 20px 28px",
         }}>
-          {/* Socials */}
-          <div style={{ display: "flex", gap: 14, justifyContent: "center" }}>
-            <SocialButton href={LINK_TIKTOK}><IconTT /></SocialButton>
-            <SocialButton href={LINK_TG}><IconTG /></SocialButton>
-            <SocialButton href={LINK_IG}><IconIG /></SocialButton>
-            <SocialButton href={LINK_FB}><IconFB /></SocialButton>
-          </div>
-          <div style={{ opacity: 0.5, fontSize: 13, letterSpacing: 1 }}>MY SOCIALS</div>
 
           {/* PROMO */}
           <div style={{
