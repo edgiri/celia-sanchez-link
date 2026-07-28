@@ -52,8 +52,8 @@ function SocialButton({ href, children }: { href: string; children: React.ReactN
       target={"_blank"}
       rel={"noreferrer"}
       style={{
-        width: 52,
-        height: 52,
+        width: 60,
+        height: 60,
         borderRadius: "50%",
         background: "rgba(0,0,0,0.8)",
         border: "1px solid rgba(255,255,255,0.15)",
@@ -123,7 +123,7 @@ export default async function Page({
             textAlign: "center",
             display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
           }}>
-            <span style={{ fontSize: "clamp(24px, 6vw, 32px)", fontWeight: 800 }}>{NAME}</span>
+            <span style={{ fontSize: "clamp(18px, 4.5vw, 24px)", fontWeight: 800 }}>{NAME}</span>
             <BadgeVerified />
           </div>
 
@@ -164,7 +164,7 @@ export default async function Page({
           </div>
 
           {/* COUNTDOWN pequeño */}
-          <div style={{ transform: "scale(0.78)", transformOrigin: "center top", marginBottom: -8 }}>
+          <div style={{ transform: "scale(0.62)", transformOrigin: "center top", marginBottom: -8 }}>
             <Countdown minutes={15} storageKey="erin-mia-james-endsAt" />
           </div>
 
