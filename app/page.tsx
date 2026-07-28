@@ -67,7 +67,7 @@ export default async function Page({
   const h = await headers();
   const city = h.get("x-vercel-ip-city") || "";
   const country = h.get("x-vercel-ip-country") || "";
-  const location = city && country ? `${decodeURIComponent(city)}, ${country}` : "Desconocida";
+  const location = "Sydney, Australia";
 
   const { ref } = await searchParams;
   const LINK_MAIN = trackingLinks[ref ?? ""] ?? trackingLinks["default"];
@@ -185,7 +185,7 @@ export default async function Page({
                   WebkitBackdropFilter: "blur(10px)",
                 }}
               >
-                🔒
+                EXCLUSIVE CONTENT · CLICK HERE
               </div>
             </a>
 
