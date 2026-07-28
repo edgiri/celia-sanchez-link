@@ -40,7 +40,7 @@ const IconFB = () => (
 
 const BadgeVerified = () => (
   <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-    <circle cx="11" cy="11" r="11" fill="#1d9bf0"/>
+    <path d="M11 1l2.5 3.5L18 3l-.5 4.5L21 9.5l-3 2.5 1 4.5-4-1.5L11 18l-4-3-4 1.5 1-4.5-3-2.5 3.5-2L4 3l4.5 1.5L11 1z" fill="#1d9bf0"/>
     <path d="M6 11.5l3.5 3.5 6.5-7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
@@ -157,7 +157,7 @@ export default async function Page({
             background: "rgba(255,255,255,0.08)",
             border: "1px solid rgba(255,255,255,0.18)",
             fontWeight: 800,
-            fontSize: "clamp(15px, 4vw, 18px)",
+            fontSize: "clamp(12px, 3vw, 14px)",
             letterSpacing: 1,
           }}>
             {PROMO}
