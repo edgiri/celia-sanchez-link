@@ -39,7 +39,7 @@ const IconFB = () => (
 );
 
 const BadgeVerified = () => (
-  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+  <svg width="16" height="16" viewBox="0 0 22 22" fill="none">
     <circle cx="11" cy="11" r="11" fill="#1d9bf0"/>
     <path d="M6 11.5l3.5 3.5 6.5-7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
