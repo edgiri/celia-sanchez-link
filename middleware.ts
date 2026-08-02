@@ -6,7 +6,6 @@ const BOT_SIGNATURES = [
   "facebookcatalog",
   "meta-externalagent",
   "meta-externalfetcher",
-  "instagram",
   "linkedinbot",
   "twitterbot",
   "telegrambot",
