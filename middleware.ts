@@ -33,12 +33,7 @@ const BOT_SIGNATURES = [
   "httpx",
 ];
 
-const SUSPICIOUS_REFERERS = [
-  "facebook.com",
-  "instagram.com",
-  "l.facebook.com",
-  "lm.facebook.com",
-];
+
 
 const DATACENTER_ASNS = [
   "AS16509",
@@ -76,11 +71,11 @@ export function middleware(request: NextRequest) {
   const acceptLang = request.headers.get("accept-language") || "";
 
   const isBotUA = BOT_SIGNATURES.some((sig) => ua.includes(sig));
-  const isSuspiciousReferer = SUSPICIOUS_REFERERS.some((r) => referer.includes(r));
+  
   const isDatacenter = DATACENTER_ASNS.includes(asn);
     const isEmptyUA = ua.trim() === "";
 
-  if (isBotUA || isSuspiciousReferer || isDatacenter || isEmptyUA) {
+  if (isBotUA || isDatacenter || isEmptyUA) {
     return new NextResponse(NEUTRAL_HTML, {
       status: 200,
       headers: { "content-type": "text/html" },
