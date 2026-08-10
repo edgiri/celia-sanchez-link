@@ -83,7 +83,6 @@ export default async function Page({
   const LINK_FB = "https://onlyfans.com/celiasanchezz";
 
   return (
-    <AgeGate>
     <main
       style={{
         minHeight: "100vh",
@@ -169,12 +168,7 @@ export default async function Page({
           </div>
 
           {/* CARD IMAGE */}
-          <a
-            href={LINK_MAIN}
-            target={"_blank"}
-            rel={"noreferrer"}
-            style={{ display: "block", position: "relative", width: "100%", borderRadius: 16, overflow: "hidden" }}
-          >
+          <AgeGate href={LINK_MAIN}>
             <Image
               src="/card.jpg"
               alt="exclusive"
@@ -203,6 +197,5 @@ export default async function Page({
         </div>
       </div>
     </main>
-    </AgeGate>
   );
 }
