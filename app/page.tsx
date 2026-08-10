@@ -193,7 +193,7 @@ export default async function Page({
             }}>
               🩵 EXCLUSIVE CONTENT · CLICK HERE
             </div>
-          </a>
+          </AgeGate>
         </div>
       </div>
     </main>
