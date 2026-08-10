@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Countdown from "./components/Countdown";
+import AgeGate from "./components/AgeGate";
 
 const trackingLinks: Record<string, string> = {
-  va2049: "https://onlyfans.com/erinmiajames/c9",
-  va2048: "https://onlyfans.com/erinmiajames/c8",
-  va2045: "https://onlyfans.com/erinmiajames/c7",
-  va2037: "https://onlyfans.com/erinmiajames/c6",
-  va1525: "https://onlyfans.com/erinmiajames/c5",
-  p:      "https://onlyfans.com/erinmiajames/c10",
-  lu:     "https://onlyfans.com/erinmiajames/c4",
-  default: "https://onlyfans.com/erinmiajames",
+  ig1:     "https://onlyfans.com/celiasanchezz/c19",
+  ig2:     "https://onlyfans.com/celiasanchezz/c20",
+  ig3:     "https://onlyfans.com/celiasanchezz/c21",
+  ig4:     "https://onlyfans.com/celiasanchezz/c22",
+  igcelia: "https://onlyfans.com/celiasanchezz/c23",
+  default: "https://onlyfans.com/celiasanchezz",
 };
 
 const IconIG = () => (
@@ -76,14 +75,15 @@ export default async function Page({
   const { ref } = await searchParams;
   const LINK_MAIN = trackingLinks[ref ?? ""] ?? trackingLinks["default"];
 
-  const NAME = "Erin Mia James";
+  const NAME = "Celia Sanchez";
   const PROMO = "75% OFF · JUST TODAY";
-  const LINK_IG = "https://www.instagram.com/erinmiajamesagain/";
-  const LINK_TIKTOK = "https://www.tiktok.com/@itserinmiajames";
-  const LINK_TG = "https://t.me/+GjGJj2dorOEzNTE1";
-  const LINK_FB = "https://www.facebook.com/ErinMiaJames/";
+  const LINK_IG = "https://www.instagram.com/celiasanchezzzzzzz?igsh=MWZ6aGJ4d2sxbjBvZQ%3D%3D&utm_source=qr";
+  const LINK_TIKTOK = "https://www.tiktok.com/@celiasanchezzzzzzz?_r=1&_t=ZS-98lZ2hbQVxk";
+  const LINK_TG = "https://t.me/+3XQiNhDfK_cwODY0";
+  const LINK_FB = "https://onlyfans.com/celiasanchezz";
 
   return (
+    <AgeGate>
     <main
       style={{
         minHeight: "100vh",
@@ -165,7 +165,7 @@ export default async function Page({
 
           {/* COUNTDOWN pequeño */}
           <div style={{ transform: "scale(0.62)", transformOrigin: "center top", marginBottom: -8 }}>
-            <Countdown minutes={15} storageKey="erin-mia-james-endsAt" />
+            <Countdown minutes={15} storageKey="celia-sanchez-endsAt" />
           </div>
 
           {/* CARD IMAGE */}
@@ -203,5 +203,6 @@ export default async function Page({
         </div>
       </div>
     </main>
+    </AgeGate>
   );
 }
