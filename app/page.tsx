@@ -110,7 +110,7 @@ export default async function Page({
       >
         {/* HERO IMAGE */}
         <div style={{ position: "relative", width: "100%", height: "clamp(320px, 70vw, 440px)" }}>
-          <Image src="/avatar.jpg" alt="Erin Mia James" fill priority style={{ objectFit: "cover", objectPosition: "top" }} />
+          <Image src="/avatar.jpg" alt="Celia Sanchez" fill priority style={{ objectFit: "cover", objectPosition: "top" }} />
           {/* Gradiente pronunciado hacia negro */}
           <div style={{
             position: "absolute", bottom: 0, left: 0, right: 0, height: "65%",
