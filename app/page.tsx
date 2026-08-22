@@ -8,6 +8,12 @@ const trackingLinks: Record<string, string> = {
   ig3:     "https://onlyfans.com/celiasanchezz/c21",
   ig4:     "https://onlyfans.com/celiasanchezz/c22",
   igcelia: "https://onlyfans.com/celiasanchezz/c23",
+  tt1:     "https://onlyfans.com/celiasanchezz/c24",
+  tt2:     "https://onlyfans.com/celiasanchezz/c25",
+  tt3:     "https://onlyfans.com/celiasanchezz/c26",
+  tt4:     "https://onlyfans.com/celiasanchezz/c27",
+  tw1:     "https://onlyfans.com/celiasanchezz/c28",
+  tg:      "https://onlyfans.com/celiasanchezz/c29",
   default: "https://onlyfans.com/celiasanchezz",
 };
 
